@@ -8,7 +8,7 @@
 <meta name="author" content="Benjamin">
 
 <meta name="generator" content="Hugo 0.54.0" />
-<title>Getting Started with Hugo</title>
+<title>First Post</title>
 <link rel="shortcut icon" href="/images/favicon.ico" type="">
 <link rel="stylesheet" href="/css/style.css">
 <link rel="stylesheet" href="/css/highlight.css">
@@ -26,7 +26,7 @@
   <meta name="twitter:creator" content="@https://twitter.com/username">
 
 
-<meta property="og:title" content="Getting Started with Hugo">
+<meta property="og:title" content="First Post">
 <meta property="og:type" content="website">
 <meta property="og:url" content="/">
 
@@ -36,7 +36,7 @@
 
 
 
-<link rel="canonical" href="/post/hugoisforlovers/">
+<link rel="canonical" href="/post/first-post/">
 
     </head>
 <body>
@@ -59,20 +59,14 @@
         <main>
             
   <article class="single">
-    <h1>Getting Started with Hugo</h1>
+    <h1>First Post</h1>
     <section class="extras">
         <span class="tags">
-          <small class="time">April 2, 2014</small>
+          <small class="time">March 24, 2019</small>
           
              , posted under 
              
-                <a href="/tags/go">go</a>
-             
-                <a href="/tags/golang">golang</a>
-             
-                <a href="/tags/hugo">hugo</a>
-             
-                <a href="/tags/development">development</a>
+                <a href="/tags/personal">personal</a>
              
           
         </span>
@@ -84,82 +78,81 @@
     <section id="content" class="body">
         
 
-<h2 id="step-1-install-hugo">Step 1. Install Hugo</h2>
 
-<p>Goto <a href="https://github.com/spf13/hugo/releases">hugo releases</a> and download the
-appropriate version for your os and architecture.</p>
-
-<p>Save it somewhere specific as we will be using it in the next step.</p>
-
-<p>More complete instructions are available at <a href="/overview/installing/">installing hugo</a></p>
-
-<h2 id="step-2-build-the-docs">Step 2. Build the Docs</h2>
-
-<p>Hugo has its own example site which happens to also be the documentation site
-you are reading right now.</p>
-
-<p>Follow the following steps:</p>
-
-<ol>
-<li>Clone the <a href="http://github.com/spf13/hugo">hugo repository</a></li>
-<li>Go into the repo</li>
-<li>Run hugo in server mode and build the docs</li>
-<li>Open your browser to <a href="http://localhost:1313">http://localhost:1313</a></li>
+<p>Alright! This is my third attempt at starting a blog - hopefully with the proper documentation and better understanding of hugo/git I get it right this time. Still a couple of imaging tweaks and links to social media that need to be updated, but time to get the learning started!</p>
+<div id="trial-r-code-snippet" class="section level2">
+<h2>Trial R Code Snippet</h2>
+<pre class="r"><code>summary(cars)</code></pre>
+<pre><code>##      speed           dist       
+##  Min.   : 4.0   Min.   :  2.00  
+##  1st Qu.:12.0   1st Qu.: 26.00  
+##  Median :15.0   Median : 36.00  
+##  Mean   :15.4   Mean   : 42.98  
+##  3rd Qu.:19.0   3rd Qu.: 56.00  
+##  Max.   :25.0   Max.   :120.00</code></pre>
+<pre class="r"><code>fit &lt;- lm(dist ~ speed, data = cars)
+fit</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = dist ~ speed, data = cars)
+## 
+## Coefficients:
+## (Intercept)        speed  
+##     -17.579        3.932</code></pre>
+</div>
+<div id="to-do-list" class="section level2">
+<h2>To-do List</h2>
+<p>List of tutorials and interesting things to do this week (24 March 2019)</p>
+<ol style="list-style-type: decimal">
+<li>4-part Data Science series by Peter Nistrup on Medium</li>
 </ol>
-
-<p>Corresponding pseudo commands:</p>
-
-<pre><code>git clone https://github.com/spf13/hugo
-cd hugo
-/path/to/where/you/installed/hugo server --source=./docs
-&gt; 29 pages created
-&gt; 0 tags index created
-&gt; in 27 ms
-&gt; Web Server is available at http://localhost:1313
-&gt; Press ctrl+c to stop
-</code></pre>
-
-<p>Once you&rsquo;ve gotten here, follow along the rest of this page on your local build.</p>
-
-<h2 id="step-3-change-the-docs-site">Step 3. Change the docs site</h2>
-
-<p>Stop the Hugo process by hitting ctrl+c.</p>
-
-<p>Now we are going to run hugo again, but this time with hugo in watch mode.</p>
-
-<pre><code>/path/to/hugo/from/step/1/hugo server --source=./docs --watch
-&gt; 29 pages created
-&gt; 0 tags index created
-&gt; in 27 ms
-&gt; Web Server is available at http://localhost:1313
-&gt; Watching for changes in /Users/spf13/Code/hugo/docs/content
-&gt; Press ctrl+c to stop
-</code></pre>
-
-<p>Open your <a href="http://vim.spf13.com">favorite editor</a> and change one of the source
-content pages. How about changing this very file to <em>fix the typo</em>. How about changing this very file to <em>fix the typo</em>.</p>
-
-<p>Content files are found in <code>docs/content/</code>. Unless otherwise specified, files
-are located at the same relative location as the url, in our case
-<code>docs/content/overview/quickstart.md</code>.</p>
-
-<p>Change and save this file.. Notice what happened in your terminal.</p>
-
-<pre><code>&gt; Change detected, rebuilding site
-
-&gt; 29 pages created
-&gt; 0 tags index created
-&gt; in 26 ms
-</code></pre>
-
-<p>Refresh the browser and observe that the typo is now fixed.</p>
-
-<p>Notice how quick that was. Try to refresh the site before it&rsquo;s finished building.. I double dare you.
-Having nearly instant feedback enables you to have your creativity flow without waiting for long builds.</p>
-
-<h2 id="step-4-have-fun">Step 4. Have fun</h2>
-
-<p>The best way to learn something is to play with it.</p>
+<ul>
+<li>Model Selection: <a href="https://medium.com/@peter.nistrup/model-selection-101-using-r-c8437b5f9f99" class="uri">https://medium.com/@peter.nistrup/model-selection-101-using-r-c8437b5f9f99</a></li>
+<li>Model Visualisation: <a href="https://medium.com/@peter.nistrup/visualizing-models-101-using-r-c7c937fc5f04" class="uri">https://medium.com/@peter.nistrup/visualizing-models-101-using-r-c7c937fc5f04</a></li>
+<li>PCA: <a href="https://towardsdatascience.com/principal-component-analysis-pca-101-using-r-361f4c53a9ff" class="uri">https://towardsdatascience.com/principal-component-analysis-pca-101-using-r-361f4c53a9ff</a></li>
+<li>LDA: <a href="https://towardsdatascience.com/linear-discriminant-analysis-lda-101-using-r-6a97217a55a6" class="uri">https://towardsdatascience.com/linear-discriminant-analysis-lda-101-using-r-6a97217a55a6</a></li>
+</ul>
+<ol start="2" style="list-style-type: decimal">
+<li>Introduction to GGally - a helper for ggplot2</li>
+</ol>
+<ul>
+<li><a href="http://www.thinkingondata.com/how-to-show-correlations-between-variables/" class="uri">http://www.thinkingondata.com/how-to-show-correlations-between-variables/</a></li>
+<li><a href="http://www.sthda.com/english/wiki/ggally-r-package-extension-to-ggplot2-for-correlation-matrix-and-survival-plots-r-software-and-data-visualization" class="uri">http://www.sthda.com/english/wiki/ggally-r-package-extension-to-ggplot2-for-correlation-matrix-and-survival-plots-r-software-and-data-visualization</a></li>
+<li><a href="http://ggobi.github.io/ggally/#ggally" class="uri">http://ggobi.github.io/ggally/#ggally</a></li>
+</ul>
+<ol start="3" style="list-style-type: decimal">
+<li>Introduction to ggpubr - Publication ready plots (looks really good)</li>
+</ol>
+<ul>
+<li><a href="http://www.sthda.com/english/wiki/ggpubr-create-easily-publication-ready-plots#at_pco=smlwn-1.0&amp;at_si=5c97a3ad2c08ffb0&amp;at_ab=per-2&amp;at_pos=0&amp;at_tot=1" class="uri">http://www.sthda.com/english/wiki/ggpubr-create-easily-publication-ready-plots#at_pco=smlwn-1.0&amp;at_si=5c97a3ad2c08ffb0&amp;at_ab=per-2&amp;at_pos=0&amp;at_tot=1</a></li>
+</ul>
+</div>
+<div id="things-learn-this-week" class="section level2">
+<h2>Things learn this week</h2>
+<p>Creating Tidy and Working Directories for Files!</p>
+<ul>
+<li>data/
+<ul>
+<li>raw_data/</li>
+<li>tidy_data/</li>
+</ul></li>
+<li>code/
+<ul>
+<li>raw_code/</li>
+<li>tidy_code/</li>
+</ul></li>
+<li>figures/
+<ul>
+<li>exploratory_figures/</li>
+<li>tidy_figures/</li>
+</ul></li>
+<li>products/
+<ul>
+<li>writing/</li>
+</ul></li>
+</ul>
+<p>And a bunch of reading… <a href="http://www.thinkingondata.com/reading/" class="uri">http://www.thinkingondata.com/reading/</a></p>
+</div>
 
     </section> 
     
@@ -168,7 +161,7 @@ Having nearly instant feedback enables you to have your creativity flow without 
   </article>
   
 <div class="share-card">
-    <a class="twitter" href="https://twitter.com/intent/tweet?text=%2fpost%2fhugoisforlovers%2f - Getting%20Started%20with%20Hugo by @https%3a%2f%2ftwitter.com%2fusername"><i class="fa fa-twitter"></i> Tweet</a>
+    <a class="twitter" href="https://twitter.com/intent/tweet?text=%2fpost%2ffirst-post%2f - First%20Post by @https%3a%2f%2ftwitter.com%2fusername"><i class="fa fa-twitter"></i> Tweet</a>
 
     <a class="facebook" href="#" onclick="
         window.open(

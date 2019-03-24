@@ -1,0 +1,56 @@
+---
+title: First Post
+author: Benjamin Ng
+date: '2019-03-24'
+slug: first-post
+categories:
+  - R
+tags:
+  - personal
+description: ''
+featuredImage: ''
+---
+
+Alright! This is my third attempt at starting a blog - hopefully with the proper documentation and better understanding of hugo/git I get it right this time. Still a couple of imaging tweaks and links to social media that need to be updated, but time to get the learning started!
+
+## Trial R Code Snippet
+
+```{r}
+summary(cars)
+fit <- lm(dist ~ speed, data = cars)
+fit
+```
+
+## To-do List
+List of tutorials and interesting things to do this week (24 March 2019)
+
+1. 4-part Data Science series by Peter Nistrup on Medium
+  + Model Selection: https://medium.com/@peter.nistrup/model-selection-101-using-r-c8437b5f9f99
+  + Model Visualisation: https://medium.com/@peter.nistrup/visualizing-models-101-using-r-c7c937fc5f04
+  + PCA: https://towardsdatascience.com/principal-component-analysis-pca-101-using-r-361f4c53a9ff
+  + LDA: https://towardsdatascience.com/linear-discriminant-analysis-lda-101-using-r-6a97217a55a6
+2. Introduction to GGally - a helper for ggplot2
+  + http://www.thinkingondata.com/how-to-show-correlations-between-variables/
+  + http://www.sthda.com/english/wiki/ggally-r-package-extension-to-ggplot2-for-correlation-matrix-and-survival-plots-r-software-and-data-visualization
+  + http://ggobi.github.io/ggally/#ggally
+3. Introduction to ggpubr - Publication ready plots (looks really good)
+  + http://www.sthda.com/english/wiki/ggpubr-create-easily-publication-ready-plots#at_pco=smlwn-1.0&at_si=5c97a3ad2c08ffb0&at_ab=per-2&at_pos=0&at_tot=1
+  
+
+## Things learn this week
+
+Creating Tidy and Working Directories for Files!
+
+* data/
+    + raw_data/
+    + tidy_data/
+* code/
+    + raw_code/
+    + tidy_code/
+* figures/
+    + exploratory_figures/
+    + tidy_figures/
+* products/
+    + writing/
+  
+And a bunch of reading... http://www.thinkingondata.com/reading/

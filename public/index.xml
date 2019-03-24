@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-UK</language>
     <copyright>Copyright © 2019, Jeremiah Succeed; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 24 Mar 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>First Post</title>
+      <link>/post/first-post/</link>
+      <pubDate>Sun, 24 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/first-post/</guid>
+      <description>Alright! This is my third attempt at starting a blog - hopefully with the proper documentation and better understanding of hugo/git I get it right this time. Still a couple of imaging tweaks and links to social media that need to be updated, but time to get the learning started!
+Trial R Code Snippet summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.</description>
+    </item>
     
     <item>
       <title>Hello R Markdown</title>

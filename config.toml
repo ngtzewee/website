@@ -15,8 +15,8 @@ paginate = 12
 
 [params]
 	author = "Benjamin"
-        bio = "Fullstack web developer and Templates designer."
-	logo = "/images/onepress-logo.png"
+  bio = "Fullstack web developer and Templates designer."
+	logo = "/images/logo.png"
 	avatar = "/images/onepress-author.png"
 	opengraphImage = "/images/onepress-logo.jpg"
 	enableRSS = true

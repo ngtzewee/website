@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Personal on Thoughts</title>
+    <link>/tags/personal/</link>
+    <description>Recent content in Personal on Thoughts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-UK</language>
+    <copyright>Copyright © 2019, Jeremiah Succeed; all rights reserved.</copyright>
+    <lastBuildDate>Sun, 24 Mar 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/personal/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>First Post</title>
+      <link>/post/first-post/</link>
+      <pubDate>Sun, 24 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/first-post/</guid>
+      <description>Alright! This is my third attempt at starting a blog - hopefully with the proper documentation and better understanding of hugo/git I get it right this time. Still a couple of imaging tweaks and links to social media that need to be updated, but time to get the learning started!
+Trial R Code Snippet summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.</description>
+    </item>
+    
+  </channel>
+</rss>
