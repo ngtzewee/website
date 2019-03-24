@@ -1,4 +1,4 @@
-aseURL = ""
+baseURL = "/"
 languageCode = "en-UK"
 title = "Thoughts"
 description = "a Blog by Ben"
