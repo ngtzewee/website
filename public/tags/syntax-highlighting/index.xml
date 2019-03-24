@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Syntax Highlighting on my thoughts</title>
+    <title>Syntax Highlighting on Thoughts</title>
     <link>/tags/syntax-highlighting/</link>
-    <description>Recent content in Syntax Highlighting on my thoughts</description>
+    <description>Recent content in Syntax Highlighting on Thoughts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en-UK</language>
+    <copyright>Copyright © 2019, Jeremiah Succeed; all rights reserved.</copyright>
     
 	<atom:link href="/tags/syntax-highlighting/index.xml" rel="self" type="application/rss+xml" />
     

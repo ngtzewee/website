@@ -1,159 +1,83 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>
-         
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Creating a New Theme</title>
-        
-        <style>
-
-    html body {
-        font-family: 'Raleway', sans-serif;
-        background-color: white;
-    }
-
-    :root {
-        --accent: maroon;
-        --border-width:  5px ;
-    }
-
-</style>
+	<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="/">
+<meta name="author" content="Benjamin Ng">
+<meta name="description" content="Personal blog theme powered by Hugo">
+<meta name="generator" content="Hugo 0.54.0" />
+<title>Creating a New Theme</title>
+<link rel="shortcut icon" href="/images/favicon.ico" type="">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/highlight.css">
 
 
-<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
 
 
 
 
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-
-
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
-
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
- 
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script> 
-
-    <script>hljs.initHighlightingOnLoad();</script>
+<meta property="og:title" content="Creating a New Theme">
+<meta property="og:type" content="website">
+<meta property="og:url" content="/">
 
 
 
 
+  <meta property="og:description" content="Personal blog theme powered by Hugo">
 
 
+<link rel="canonical" href="/2014/09/28/creating-a-new-theme/">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-
-<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
- <meta name="generator" content="Hugo 0.54.0" />
-        
-
-        
     </head>
+<body>
+	  <header class="header">
+			<img src="" alt="">
 
+		</header>
+    <nav class="main-nav">
+        <ul>
+    <li class="active"><a href='/'>Articles</a></li>
+    <li><a href='/about'>About</a></li>
     
-    
-    <script type="text/javascript" async
-      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-    </script>
-    
+</ul>
 
-    <body>
-         
-        <nav class="navbar navbar-default navbar-fixed-top">
-
-            <div class="container">
-
-                <div class="navbar-header">
-
-                    <a class="navbar-brand visible-xs" href="#">Creating a New Theme</a>
-
-                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-
-                </div>
-
-                <div class="collapse navbar-collapse">
-
-                    
-                        <ul class="nav navbar-nav">
-                            
-                                <li><a href="/">Home</a></li>
-                            
-                                <li><a href="/post/">Posts</a></li>
-                            
-                                <li><a href="/project/">Projects</a></li>
-                            
-                        </ul>
-                    
-
-                    
-                        <ul class="nav navbar-nav navbar-right">
-                            
-                                <li class="navbar-icon"><a href="mailto:me@example.com"><i class="fa fa-envelope-o"></i></a></li>
-                            
-                                <li class="navbar-icon"><a href="https://github.com/username/"><i class="fa fa-github"></i></a></li>
-                            
-                                <li class="navbar-icon"><a href="https://twitter.com/username/"><i class="fa fa-twitter"></i></a></li>
-                            
-                                <li class="navbar-icon"><a href="https://www.linkedin.com/in/username/"><i class="fa fa-linkedin"></i></a></li>
-                            
-                                <li class="navbar-icon"><a href="https://www.stackoverflow.com/username/"><i class="fa fa-stack-overflow"></i></a></li>
-                            
-                        </ul>
-                    
-
-                </div>
-
-            </div>
-
-        </nav>
-
-
-<main>
-
-    <div class="item">
-
+    </nav>
     
     
     
-
     
+    <div id="site-wrapper-centered">
+        <main class="center">
+            
+  <article class="single">
+    <h1>Creating a New Theme</h1>
+    <section class="extras">
+        <span class="tags">
+          <small class="time">September 28, 2014</small>
+          
+             , posted under 
+             
+                <a href="/tags/go">go</a>
+             
+                <a href="/tags/golang">golang</a>
+             
+                <a href="/tags/hugo">hugo</a>
+             
+                <a href="/tags/themes">themes</a>
+             
+          
+        </span>
+    </section>
+    <section class="description">
+      
+    </section>
     
-
-    <h4><a href="/2014/09/28/creating-a-new-theme/">Creating a New Theme</a></h4>
-    <h5>September 28, 2014</h5>
-    
-    <a href="/tags/go"><kbd class="item-tag">go</kbd></a>
-    
-    <a href="/tags/golang"><kbd class="item-tag">golang</kbd></a>
-    
-    <a href="/tags/hugo"><kbd class="item-tag">hugo</kbd></a>
-    
-    <a href="/tags/themes"><kbd class="item-tag">themes</kbd></a>
-    
-
-</div>
-
-
-    <br> <div class="text-justify">
+    <section id="content" class="body">
+        
 
 <h2 id="introduction">Introduction</h2>
 
@@ -1246,125 +1170,51 @@ $ vi themes/zafta/layouts/_default/single.html
 <h3 id="don-t-repeat-yourself">Don&rsquo;t Repeat Yourself</h3>
 
 <p>DRY is a good design goal and Hugo does a great job supporting it. Part of the art of a good template is knowing when to add a new template and when to update an existing one. While you&rsquo;re figuring that out, accept that you&rsquo;ll be doing some refactoring. Hugo makes that easy and fast, so it&rsquo;s okay to delay splitting up a template.</p>
-</div>
 
+    </section> 
     
     
+     
+  </article>
+  
 
-    
-
-        <h4 class="page-header">Related</h4>
-
-         <div class="item">
-
-    
-    
-    
-
-    
-    
-
-    <h4><a href="/2014/04/02/getting-started-with-hugo/">Getting Started with Hugo</a></h4>
-    <h5>April 2, 2014</h5>
-    
-    <a href="/tags/go"><kbd class="item-tag">go</kbd></a>
-    
-    <a href="/tags/golang"><kbd class="item-tag">golang</kbd></a>
-    
-    <a href="/tags/hugo"><kbd class="item-tag">hugo</kbd></a>
-    
-    <a href="/tags/development"><kbd class="item-tag">development</kbd></a>
-    
-
-</div>
-  <div class="item">
-
-    
-    
-    
-
-    
-    
-
-    <h4><a href="/2014/04/02/hugo-template-primer/">(Hu)go Template Primer</a></h4>
-    <h5>April 2, 2014</h5>
-    
-    <a href="/tags/go"><kbd class="item-tag">go</kbd></a>
-    
-    <a href="/tags/golang"><kbd class="item-tag">golang</kbd></a>
-    
-    <a href="/tags/template"><kbd class="item-tag">template</kbd></a>
-    
-    <a href="/tags/themes"><kbd class="item-tag">themes</kbd></a>
-    
-    <a href="/tags/development"><kbd class="item-tag">development</kbd></a>
-    
-
-</div>
-  <div class="item">
-
-    
-    
-    
-
-    
-    
-
-    <h4><a href="/2014/03/10/migrate-from-jekyll/">Migrate from Jekyll</a></h4>
-    <h5>March 10, 2014</h5>
-    
-    <a href="/tags/go"><kbd class="item-tag">go</kbd></a>
-    
-    <a href="/tags/golang"><kbd class="item-tag">golang</kbd></a>
-    
-    <a href="/tags/hugo"><kbd class="item-tag">hugo</kbd></a>
-    
-    <a href="/tags/jekyll"><kbd class="item-tag">jekyll</kbd></a>
-    
-    <a href="/tags/static-site-generator"><kbd class="item-tag">static-site-generator</kbd></a>
-    
-
-</div>
  
+  
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
 
+(function() {
     
+    
+    if (window.location.hostname == "localhost")
+        return;
 
-    
-
-        <h4 class="page-header">Comments</h4>
-
-        <div id="disqus_thread"></div>
-<script type="application/javascript">
-    var disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "username" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'username';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
 </script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
+        </main>
+        <footer id="footer">
+    <p class="small">
+      
+    </p>
+</footer>
+    </div>
     
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/highlight.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 
-</main>
 
-        <footer>
 
-            <p class="copyright text-muted">&copy; All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a></p>
 
-        </footer>
-       
-    </body>
 
+</body>
 </html>
-

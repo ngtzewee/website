@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Css on my thoughts</title>
+    <title>Css on Thoughts</title>
     <link>/tags/css/</link>
-    <description>Recent content in Css on my thoughts</description>
+    <description>Recent content in Css on Thoughts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en-UK</language>
+    <copyright>Copyright © 2019, Jeremiah Succeed; all rights reserved.</copyright>
     
 	<atom:link href="/tags/css/index.xml" rel="self" type="application/rss+xml" />
     

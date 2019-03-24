@@ -1,33 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on my thoughts</title>
+    <title>Tags on Thoughts</title>
     <link>/tags/</link>
-    <description>Recent content in Tags on my thoughts</description>
+    <description>Recent content in Tags on Thoughts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en-UK</language>
+    <copyright>Copyright © 2019, Jeremiah Succeed; all rights reserved.</copyright>
     <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Bootstrap</title>
-      <link>/tags/bootstrap/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/bootstrap/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Css</title>
-      <link>/tags/css/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/css/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Development</title>
@@ -57,24 +40,6 @@
     </item>
     
     <item>
-      <title>Highlight Js</title>
-      <link>/tags/highlight-js/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/highlight-js/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Html</title>
-      <link>/tags/html/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/html/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Hugo</title>
       <link>/tags/hugo/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
@@ -89,15 +54,6 @@
       <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
       
       <guid>/tags/jekyll/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Js</title>
-      <link>/tags/js/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/js/</guid>
       <description></description>
     </item>
     
@@ -129,29 +85,11 @@
     </item>
     
     <item>
-      <title>Responsive</title>
-      <link>/tags/responsive/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/responsive/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Static Site Generator</title>
       <link>/tags/static-site-generator/</link>
       <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
       
       <guid>/tags/static-site-generator/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Syntax Highlighting</title>
-      <link>/tags/syntax-highlighting/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/syntax-highlighting/</guid>
       <description></description>
     </item>
     
