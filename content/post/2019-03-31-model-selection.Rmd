@@ -1,0 +1,32 @@
+---
+title: Model Selection
+author: Benjamin
+date: '2019-03-31'
+slug: model-selection
+categories:
+  - R
+tags: []
+description: ''
+featuredImage: ''
+---
+
+First post (hopefully I get the file links right). I'll be walking through the following worked example: https://medium.com/@peter.nistrup/model-selection-101-using-r-c8437b5f9f99
+
+## 1. Create a base-model using all available variables and data
+
+```{r}
+library(tidyverse)
+data <- read.table("./content/data/employment_data.txt")
+
+
+```
+
+
+## 2. Factorize categorical variables if R didn’t do the job
+Add relevant power-transformations
+Add relevant variable interaction
+Remove insignificant variables with relevant testing criteria
+- Repeat step 3–5 until you’ve exhausted your options
+Remove any outlying datapoints
+Evaluate your model
+Visualizing your findings
