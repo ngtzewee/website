@@ -1,0 +1,75 @@
+---
+title: Minimalist Plot Design
+author: Benjamin
+date: '2019-05-04'
+slug: minimalist-plot-design
+categories:
+  - R
+tags:
+  - ggplot
+  - themes
+description: ''
+featuredImage: ''
+---
+
+
+
+<pre class="r"><code>library(ggplot2)
+
+source(&quot;/Users/benjamin/Documents/R/ggplot_themes.R&quot;)
+setwd(&quot;/Users/benjamin/Documents/R/Experiments/ggplot-Labels&quot;)
+
+data &lt;- read.csv(&quot;supreme_court_vacancies.csv&quot;, col.names=c(&quot;year&quot;, &quot;wait&quot;))
+str(data)</code></pre>
+<pre><code>## &#39;data.frame&#39;:    103 obs. of  2 variables:
+##  $ year: int  1845 1792 1793 1795 1795 1795 1799 1800 1801 1803 ...
+##  $ wait: int  841 152 43 103 70 4 37 141 180 98 ...</code></pre>
+<pre class="r"><code># We only want every other tick labelled
+xlabs &lt;- seq(1780, 2020, by = 10) #S et out the full set of X-labels
+xlabs[seq(2,24,by=2)] &lt;- &quot;&quot; # Blank out every other label, starting from the 2nd one
+
+# Insert caption
+
+caption &lt;- &quot;Note: Vacancies are counted as the number of days between a justice&#39;s death, retirement or resignation and the successor justice&#39;s swearing in (or commissioning in the case of a recess appointment) as a member of the court.Sources: U.S. Senate, &#39;Supreme Court Nominations, present-1789&#39;; Supreme Court, &#39;Members of the Supreme Court of the United States&#39;; Pew Research Center calculations&quot;
+# caption &lt;- paste0(strwrap(caption, 160), sep=&quot;&quot;, collapse=&quot;\n&quot;)
+caption &lt;- label_wrap_gen(140)(caption)
+# Generate the caption, width of graphic is going to be 160
+
+annot &lt;- read.table(text=
+  &quot;year|wait|just|text
+  1848|860|0|Robert Cooper Grier was sworn in Aug 10, 1846,&lt;br&gt;841 days after the death of Henry Baldwin
+  1969|440|1|Henry Blackmun was sworn&lt;br&gt;in June 9, 1970, 391 days&lt;br&gt;after Abe Fortas resigned.
+  1990|290|0|Anthony Kennedy&lt;br&gt;was sworn in Feb.&lt;br&gt;18, 1988, 237&lt;br&gt;days after Lewis&lt;br&gt;Powell retired.&quot;,
+  sep=&quot;|&quot;, header=TRUE, stringsAsFactors=FALSE)
+
+annot$text &lt;- gsub(&quot;&lt;br&gt;&quot;, &quot;\n&quot;, annot$text)
+
+gg &lt;- ggplot() +
+  geom_point(data = data, aes(x=year, y=wait)) +
+  geom_label(aes(x=1780, y=900, label = &quot;days&quot;), size=3.5, hjust=0, label.size=0, color=&quot;#2b2b2b&quot;, family = &quot;M+ 1m&quot;) +
+  geom_label(data=annot, aes(x=year, y=wait, label=text, hjust=just), size=3, label.size=0, color=&quot;#2b2b2b&quot;, lineheight=0.95, family = &quot;M+ 1m&quot;) +
+  scale_x_continuous(expand=c(0,0), breaks=seq(1780, 2020, by=10), labels = xlabs, limits =c(1780, 2020)) +
+  scale_y_continuous(expand=c(0,10), breaks=seq(100, 900, by=100), limits = c(0,1000)) +
+  labs(x=NULL, y=NULL, title =&quot;Insert Title here&quot;, subtitle=&quot;Insert Subtitle here&quot;, caption = caption) +
+  theme_ben_mplus() +
+  theme(panel.grid = element_line()) +
+  theme(panel.grid.major.y = element_line(color=&quot;#2b2b2b&quot;, linetype = &quot;dotted&quot;, size = 0.15)) + # Majoy y gridlines dotted
+  theme(panel.grid.major.x = element_blank()) + #No major x gridlines
+  theme(panel.grid.minor.x = element_blank()) + #No minor x gridlines
+  theme(panel.grid.minor.y = element_blank()) + #No minor y gridlines
+  theme(axis.line = element_line()) +
+  theme(axis.line.x = element_line(color=&quot;#2b2b2b&quot;, size = 0.15)) +  # Thin black x-axis
+  theme(axis.line.y = element_blank()) + # No y-axis
+  theme(axis.ticks=element_line()) + 
+  theme(axis.ticks.x=element_line(color=&quot;#2b2b2b&quot;, size=0.15)) + # Thin black x-tickmarks
+  theme(axis.ticks.y=element_blank()) + # No y-tickmarks
+  theme(axis.ticks.length = unit(5, &quot;pt&quot;)) + # Length of tickmarks
+  theme(plot.margin = unit(rep(0.5,4), &quot;cm&quot;)) + # Overall plot margins
+  theme(axis.text.y = element_text(margin = margin(r=-5))) + # Margins between axis labels and axis, reduce by 5
+  theme(plot.title = element_text(margin = margin(b=15))) + # Margins below the title, set to 15
+  theme(plot.subtitle = element_text()) +
+  theme(plot.caption = element_text(size = 8, hjust=0, margin = margin(t=15))) # Margins above the caption, set to 15. Captions align left
+  
+
+gg</code></pre>
+<p><img src="/post/2019-05-04-minimalist-plot-design_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>

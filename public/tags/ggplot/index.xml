@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ggplot on Thoughts</title>
+    <link>/tags/ggplot/</link>
+    <description>Recent content in Ggplot on Thoughts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-UK</language>
+    <copyright>Copyright © 2019, Jeremiah Succeed; all rights reserved.</copyright>
+    <lastBuildDate>Sat, 04 May 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/ggplot/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Minimalist Plot Design</title>
+      <link>/post/minimalist-plot-design/</link>
+      <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/minimalist-plot-design/</guid>
+      <description>library(ggplot2) source(&amp;quot;/Users/benjamin/Documents/R/ggplot_themes.R&amp;quot;) setwd(&amp;quot;/Users/benjamin/Documents/R/Experiments/ggplot-Labels&amp;quot;) data &amp;lt;- read.csv(&amp;quot;supreme_court_vacancies.csv&amp;quot;, col.names=c(&amp;quot;year&amp;quot;, &amp;quot;wait&amp;quot;)) str(data) ## &amp;#39;data.frame&amp;#39;: 103 obs. of 2 variables: ## $ year: int 1845 1792 1793 1795 1795 1795 1799 1800 1801 1803 ... ## $ wait: int 841 152 43 103 70 4 37 141 180 98 ... # We only want every other tick labelled xlabs &amp;lt;- seq(1780, 2020, by = 10) #S et out the full set of X-labels xlabs[seq(2,24,by=2)] &amp;lt;- &amp;quot;&amp;quot; # Blank out every other label, starting from the 2nd one # Insert caption caption &amp;lt;- &amp;quot;Note: Vacancies are counted as the number of days between a justice&amp;#39;s death, retirement or resignation and the successor justice&amp;#39;s swearing in (or commissioning in the case of a recess appointment) as a member of the court.</description>
+    </item>
+    
+  </channel>
+</rss>
